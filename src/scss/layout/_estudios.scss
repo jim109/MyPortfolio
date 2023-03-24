@@ -1,0 +1,26 @@
+
+  
+  /* Estilo para los elementos article */
+  article {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid $gris;
+    border-radius: 0.5rem;
+  }
+  
+  /* Estilo para el encabezado de cada elemento article */
+  article h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Estilo para los párrafos dentro de los elementos article */
+  article p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Estilo para el primer párrafo dentro de cada elemento article */
+  article p:first-of-type {
+    font-weight: bold;
+  }
+  
