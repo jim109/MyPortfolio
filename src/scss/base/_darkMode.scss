@@ -9,22 +9,18 @@
         color: $gris;
     }
 
-    .anuncio, 
-    .resumen-propiedad {
-        background-color: $grisOscuro;
-        border: 1px solid $grisOscuro;
-
-        .precio {
-            color: $verde;
+    .proyectos {
+        .card {
+            background-color: $gris;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+            
+          }
+        h2, a {
+            color: $negro;
         }
-
-        .icono {
-            filter: invert(100%);
+        p {
+            color: $grisOscuro;
         }
-    }
-
-    .texto-nosotros blockquote {
-        color: $blanco;
     }
 
     .formulario {

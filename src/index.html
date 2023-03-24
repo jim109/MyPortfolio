@@ -33,28 +33,15 @@
                 <h2>Hi, I'm</h2>
                 <h1>Jimmy Steve Osma</h1>
                 <p>Frontend Developer</p>
-                <div class="redes-sociales">
-                    <a href="">
-                        <img class="redes-sociales__iconos" src="/build/img/github.svg" alt="Logo Github">
-                    </a>
-                    <a href="">
-                        <img class="redes-sociales__iconos" src="/build/img/linkedin.svg" alt="Logo Linkedin">
-                    </a>
-                    <a href="">
-                        <img class="redes-sociales__iconos" src="/build/img/discord.svg" alt="Logo Discord">
-                    </a>
-                    <a href="https://twitter.com/">
-                        <img class="redes-sociales__iconos" src="/build/img/twitter.svg" alt="Logo Twitter">
-                    </a>
-                </div>
+                
             </div>
             
         </div>
     </header>
-    <main id="me" class="contenedor seccion">
-        <h2>Sobre mi</h2>
-        <p>Ingeniero de Sistemas, Desarrollador Frontend con JavaScript, desarrollo bajo tecnologías agiles y buenas practicas en diseño y desarrollo.</p>
-    </main>
+<main id="me" class="contenedor seccion">
+    <h2>Sobre mi</h2>
+    <p>Ingeniero de Sistemas, Desarrollador Frontend con JavaScript, desarrollo bajo tecnologías agiles y buenas practicas en diseño y desarrollo.</p>
+</main>
     <section id="habilidades" class="seccion contenedor">
         <h2>Habilidades</h2>
         <div class="icono">
@@ -84,30 +71,52 @@
             </div>
         </div>
     </section>
-    <section id="proyectos" class="seccion contenedor">
+    <section id="proyectos" class="seccion contenedor ">
         <h2>Proyectos</h2>
-        <article>
-            <h3>Studio Ghibli Backoffice</h3>
-            <p>Aplicación Web la cual administra la información de la página principal, maneja creación, modificación,
-                actualización de usuario y películas, inicio de sesión con opción de redes sociales y autenticación 2FA
-                consumiendo la información de la API. Desarrollado en Nextjs, Sass. </p>
-        </article>
-        <article>
-            <h3>Notebook Pad</h3>
-            <p>Aplicación Web para llevar el diario, guarda imágenes y notas. Maneja inicio de sesión con redes
-                sociales implementando Firebase como motor de autenticación y de base de datos. Desarrollado con
-                React y redux, Firebase y Sass. </p>
-        </article>
-        <article>
-            <h3>Studio Ghibli Tracker</h3>
-            <p>Aplicación Web que muestra todos los catálogos de películas producidas por Studio Ghibli,
-                desarrollada en Nextjs, Sass </p>
-        </article>
-        <article>
-            <h3>Todo's ListApp</h3>
-            <p>Aplicación Web de gestión de tareas (Todo’s), podemos añadir nuevas tareas, borrar, marcar como
-                completas. Se desarrollo en React 18 con Hooks y CSS </p>
-        </article>
+        <div class="proyectos">
+            <article class="card">
+                <a href=""></a><img src="/build/img/SGBackoffice.png" alt=""></a>
+                <h2>Studio Ghibli Backoffice</h2>
+                <p>Aplicación Web la cual administra la información de la página principal, maneja creación, modificación,
+                    actualización de usuario y películas, inicio de sesión con opción de redes sociales y autenticación 2FA
+                    consumiendo la información de la API. Desarrollado en Nextjs, Sass. </p>
+                <div class="enlaces">
+                    <a href="https://github.com/Platzi-Master-C10-LRR/User-Studio-Ghibli-Backoffice-Frontend/tree/main" target="_blank">Github</a>
+                    <a href="https://studioghibli-backoffice.netlify.app/" target="_blank">Sitio Web</a>
+                </div>
+            </article>
+            <article class="card">
+                <a href="https://notebookapp1.netlify.app/auth/login"></a><img src="/build/img/notePad.png" alt=""></a>
+                <h2>Notebook Pad</h2>
+                <p>Aplicación Web para llevar el diario, guarda imágenes y notas. Maneja inicio de sesión con redes
+                    sociales implementando Firebase como motor de autenticación y de base de datos. Desarrollado con
+                    React y redux, Firebase y Sass. </p>
+                    <div class="enlaces">
+                        <a href="https://github.com/jim109/NoteBookApp" target="_blank">Github</a>
+                        <a href="https://notebookapp1.netlify.app" target="_blank">Sitio Web</a>
+                    </div>
+            </article>
+            <article class="card">
+                <a href=""></a><img src="/build/img/SGTracker.png" alt=""></a>
+                <h2>Studio Ghibli Tracker</h2>
+                <p>Aplicación Web que muestra todos los catálogos de películas producidas por Studio Ghibli,
+                    desarrollada en Nextjs, Sass </p>
+                    <div class="enlaces">
+                        <a href="https://github.com/marlon268/studio-ghibli" target="_blank">Github</a>
+                        <a href="https://studio-ghibli-theta.vercel.app" target="_blank">Sitio Web</a>
+                    </div>
+            </article>
+            <article class="card">
+                <a href="https://guileless-florentine-1e3e7c.netlify.app/"></a><img src="/build/img/todoList.png" alt=""></a>
+                <h2>Todo's ListApp</h2>
+                <p>Aplicación Web de gestión de tareas (Todo’s), podemos añadir nuevas tareas, borrar, marcar como
+                    completas. Se desarrollo en React 18 con Hooks y CSS </p>
+                    <div class="enlaces">
+                        <a href="https://github.com/jim109/todoListApp" target="_blank">Github</a>
+                        <a href="https://guileless-florentine-1e3e7c.netlify.app/" target="_blank">Sitio Web</a>
+                    </div>
+            </article>
+        </div>
     </section>
 
     <section id="estudios" class="contenedor seccion">
@@ -126,16 +135,30 @@
                 como Scrum.</p>
         </article>
     </section>
-
-    <section id="contacto" class="seccion contenedor">
-            <h2>Contacto</h2>
-            <h4>Celular: </h4>
+    <h2>Contacto</h2>
+    <section id="contacto" class="seccion contenedor contacto">
+            
+        <div>
+            <h4>Celular</h4>
             <p>3022301506</p>
-            <h4>Correo: </h4>
+            <h4>Correo</h4>
             <p>josma109@gmail.com</p>
-            <h4>Instagram</h4>
-            <h4>Linkedin</h4>                    
-            <h4>Github</h4>                    
+        </div>
+            <div class="redes-sociales">
+                <a href="">
+                    <img class="redes-sociales__iconos" src="/build/img/github.svg" alt="Logo Github">
+                </a>
+                <a href="">
+                    <img class="redes-sociales__iconos" src="/build/img/linkedin.svg" alt="Logo Linkedin">
+                </a>
+                <a href="">
+                    <img class="redes-sociales__iconos" src="/build/img/discord.svg" alt="Logo Discord">
+                </a>
+                <a href="https://twitter.com/">
+                    <img class="redes-sociales__iconos" src="/build/img/twitter.svg" alt="Logo Twitter">
+                </a>
+            </div>    
+    </section>            
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
