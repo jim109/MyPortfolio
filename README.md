@@ -45,7 +45,7 @@ Este es mi sitio web de portafolio que muestra mis habilidades y proyectos como 
 Jimmy Steve Osma
 
 - [Web](https://jimmyosma.co/)
-- [GitHub](https://github.com/tu-usuario)
-- [LinkedIn](https://www.linkedin.com/in/tu-nombre)
-- [Twitter](https://twitter.com/tu-nombre)
+- [GitHub](https://github.com/jim109)
+- [LinkedIn](https://www.linkedin.com/in/jimmyosma/)
+- [Twitter](https://twitter.com/jimwy109)
 - [Correo electrónico](mailto:me@jimmyosma.co)
