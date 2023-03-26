@@ -3,7 +3,6 @@
     @include boton($amarillo, inline-block);
     
 }
-
 .boton-amarillo-block {
     @include boton($amarillo, block);
 }
@@ -19,4 +18,9 @@
 
 .boton-verde-block {
     @include boton($verde, block); 
+}
+
+//centra un boton en el espacio
+.contenedor-boton {
+    text-align: center;
 }

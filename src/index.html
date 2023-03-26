@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="/build/css/app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-... tu código de integridad ..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
 </head>
 <body>
     <header class="header inicio">
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="derecha">
-                    <img src="/build/img/dark-mode.svg" class="dark-mode-boton">
+                    <img src="/build/img/dark-mode.svg" class="dark-mode-boton" alt="boton darkmode">
                     <nav class="navegacion">
                         <a href="#me">Sobre mi</a>
                         <a href="#habilidades">Habilidades</a>
@@ -34,14 +34,20 @@
                 <h2>Hi, I'm</h2>
                 <h1>Jimmy Steve Osma</h1>
                 <p>Frontend Developer</p>
-                
+                <div class="contenedor contenedor-boton">
+                    <a class="boton-amarillo" href="https://1drv.ms/b/s!AjfAQ0H3dxiXx7Flficd35yZ2mCA9g?e=Buo4Ym" target="_blank">Descargar CV</a>
+                </div>
             </div>
-            
         </div>
     </header>
 <main id="me" class="contenedor seccion">
     <h2>Sobre mi</h2>
-    <p>Ingeniero de Sistemas, Desarrollador Frontend con JavaScript, desarrollo bajo tecnologías agiles y buenas practicas en diseño y desarrollo.</p>
+    <p>Soy Ingeniero de Sistemas y Desarrollador Frontend. Mi área de especialidad se encuentra en el desarrollo
+         de aplicaciones en el lado del cliente utilizando JavaScript, específicamente con React, Next.js y Vue. 
+         También tengo conocimientos en PHP y en bases de datos como MySQL y Firebase.</p>
+    <p>Soy un apasionado de la Tecnología, las Criptomonedas, el Anime y el crecimiento constante como profesional
+         y persona. Me gusta montar bicicleta y los videojuegos.</p>
+  
 </main>
     <section id="habilidades" class="seccion contenedor">
         <h2>Habilidades</h2>
@@ -74,9 +80,9 @@
     </section>
     <section id="proyectos" class="seccion contenedor ">
         <h2>Proyectos</h2>
-        <div class="proyectos">
-            <article class="card">
-                <a href=""></a><img src="/build/img/SGBackoffice.png" alt=""></a>
+        <div class="main-card">
+            <article class="card card-proyectos">
+                <img src="/build/img/SGBackoffice.png" alt="imagen proyecto">
                 <h2>Studio Ghibli Backoffice</h2>
                 <p>Aplicación Web la cual administra la información de la página principal, maneja creación, modificación,
                     actualización de usuario y películas, inicio de sesión con opción de redes sociales y autenticación 2FA
@@ -86,8 +92,8 @@
                     <a href="https://studioghibli-backoffice.netlify.app/" target="_blank">Sitio Web</a>
                 </div>
             </article>
-            <article class="card">
-                <a href="https://notebookapp1.netlify.app/auth/login"></a><img src="/build/img/notePad.png" alt=""></a>
+            <article class="card card-proyectos">
+                <a href="https://notebookapp1.netlify.app/auth/login"><img src="/build/img/notePad.png" alt="imagen proyecto"></a>
                 <h2>Notebook Pad</h2>
                 <p>Aplicación Web para llevar el diario, guarda imágenes y notas. Maneja inicio de sesión con redes
                     sociales implementando Firebase como motor de autenticación y de base de datos. Desarrollado con
@@ -97,17 +103,17 @@
                         <a href="https://notebookapp1.netlify.app" target="_blank">Sitio Web</a>
                     </div>
             </article>
-            <article class="card">
-                <a href=""></a><img src="/build/img/SGTracker.png" alt=""></a>
+            <article class="card card-proyectos">
+                <a href=""><img src="/build/img/SGTracker.png" alt=""></a>
                 <h2>Studio Ghibli Tracker</h2>
                 <p>Aplicación Web que muestra todos los catálogos de películas producidas por Studio Ghibli,
-                    desarrollada en Nextjs, Sass </p>
+                    desarrollada en Nextjs, Sass, Atomic Design, consumiendo una Api.</p>
                     <div class="enlaces">
                         <a href="https://github.com/marlon268/studio-ghibli" target="_blank">Github</a>
                         <a href="https://studio-ghibli-theta.vercel.app" target="_blank">Sitio Web</a>
                     </div>
             </article>
-            <article class="card">
+            <article class="card card-proyectos">
                 <a href="https://guileless-florentine-1e3e7c.netlify.app/"></a><img src="/build/img/todoList.png" alt=""></a>
                 <h2>Todo's ListApp</h2>
                 <p>Aplicación Web de gestión de tareas (Todo’s), podemos añadir nuevas tareas, borrar, marcar como
@@ -122,50 +128,82 @@
 
     <section id="estudios" class="contenedor seccion">
         <h2>Estudios</h2>
-        <div class="estudioso">
-            <article>
-                <h3>Ingeniero de Sistemas</h3>
-                <p>Universitaria de Investigacion y desarrollo UDI</p>
-                <p>2010 - 2015</p>
+        <div class="main-card">
+            <article class="card card-estudio">
+                <div>
+                    <a href="https://www.linkedin.com/school/universidad-de-investigacion-y-desarrollo-udi/">
+                        <img class="img-estudios" src="/build//img/udi.jpeg" alt="logo estudios">
+                    </a>
+                </div>
+                <div>
+                    <h5>Ingeniero de Sistemas</h5>
+                    <p>Universitaria de Investigacion y desarrollo - UDI</p>
+                    <p>2010 - 2015</p> 
+                </div>
             </article>
-            <article>
-                <h3>Frontend Developer</h3>
-                <p>Platzi Master Cohort 10</p>
-                <p>2022</p>
-                <p>Platzi Master es un programa de educación en línea destinado a la profundización técnica en el desarrollo web manejando herramientas de desarrollo
-                    como Javascript, React, Nextjs, Css, Sass y entornos de trabajo colaborativo con demás equipos de trabajo como slack, manejando metodologías agiles
-                    como Scrum.</p>
+            <article class="card card-estudio">
+                <div>
+                    <a href="https://platzi.com/p/jimwy109/curso/2467-course/diploma/detalle/">
+                        <img class="img-estudios" src="/build/img/platzi.jpeg" alt="Logo platzi">
+                    </a>
+                </div>
+                <div>
+                    <h5>Platzi Master - Frontend Developer</h5>
+                    <p>Platzi Master Cohort 10</p>
+                    <p>2022</p>
+                </div>
+            </article>
+            <article class="card card-estudio">
+                <div>
+                    <a href="https://platzi.com/p/jimwy109/curso/2467-course/diploma/detalle/">
+                        <img class="img-estudios" src="/build//img/platzi.jpeg" alt="logo estudios">
+                    </a>
+                </div>
+                <div>
+                    <h5>Curso de Frontend Developer</h5>
+                    <p>Platzi</p>
+                    <p>2022</p>
+                </div>
+            </article>
+            <article class="card card-estudio">
+                <div>
+                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-b29b8353-b71c-4f59-9762-e88fa1a17997.pdf">
+                        <img class="img-estudios" src="/build//img/udemy.jpeg" alt="logo estudios">
+                    </a>
+                </div>
+                <div>
+                    <h5>Curso Javascript Moderno</h5>
+                    <p>Udemy</p>
+                    <p>2022</p>
+                </div>
+            </article>
+            <article class="card card-estudio">
+                <div>
+                    <a href="https://platzi.com/p/jimwy109/curso/1750-scrum/diploma/detalle/">
+                        <img class="img-estudios" src="/build//img/platzi.jpeg" alt="logo estudios">
+                    </a>
+                </div>
+                <div>
+                    <h5>Curso Profesional de SCRUM</h5>
+                    <p>Platzi</p>
+                    <p>2022</p>
+                </div>
             </article>
         </div>
     </section>
-    
-    <form action="#contacto" method="post" class="contenedor">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme por teléfono o correo electrónico:</p>
-        <ul>
-            <li><strong>Whatsapp:</strong><a href="https://api.whatsapp.com/send?phone=573022301506"><i class="fab fa-whatsapp"></i></a></li>
-          <li><strong>Teléfono:</strong> +57 302-230-1506</li>
-          <li><strong>Correo electrónico:</strong> me@jimmyosma.co</li>
-        </ul>
-        <p>También puedes encontrarme en las siguientes redes sociales:</p>
-        <ul class="social-icons">
-          <li><a href="https://github.com/tu_usuario" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/tu_usuario" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://twitter.com/tu_usuario" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://discord.gg/tu_servidor" target="_blank"><i class="fab fa-discord"></i></a></li>
-        </ul>
-      </form>          
-    <footer class="footer seccion">
+             
+    <footer id="contacto" class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="#me">Sobre mi</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="#estudios">Estudios</a>
-                    <a href="#contacto">Contacto</a>
-              </nav>
+            <p class="copyright">Contactame</p>
+            <ul class="social-icons">
+                <li><a href="https://api.whatsapp.com/send?phone=573022301506"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="mailto:me@jimmyosma.co" target="_blank"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://github.com/jim109" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jimmyosma/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/jimwy109" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            </ul>
         </div>
-        <p class="copyright">© <a href="">Pixelado</a> - All right reserved 2023 </p>
+        <p class="copyright">© Jimmy Osma - All right reserved 2023 </p>
     </footer>
 
     <script src="/build/js/bundle.min.js"></script>
